@@ -5,21 +5,21 @@
 class Agentsaegis < Formula
   desc "Security awareness proxy for AI coding tools"
   homepage "https://github.com/agentsaegis/go-proxy"
-  version "0.7.1"
+  version "0.8.0"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.7.1/agentsaegis_0.7.1_darwin_amd64.tar.gz"
-      sha256 "6b760f96267dd7745c9612060e4432fc2b7c799dc5f3eeee2c19c9097b8d0b95"
+      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.8.0/agentsaegis_0.8.0_darwin_amd64.tar.gz"
+      sha256 "2ef2770caafa05f6b2d9a36ea53f2d8fa39f28adcf3c60bafb02a0b75921e42f"
 
       define_method(:install) do
         bin.install "agentsaegis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.7.1/agentsaegis_0.7.1_darwin_arm64.tar.gz"
-      sha256 "003b180c362d0731e3b90fb2b08226db4552888f717e361460355589c2afc923"
+      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.8.0/agentsaegis_0.8.0_darwin_arm64.tar.gz"
+      sha256 "fed3867bf88de9e8ae9cb2c2c0d258881cfd55355886304d9d61c557423be4dc"
 
       define_method(:install) do
         bin.install "agentsaegis"
@@ -29,15 +29,15 @@ class Agentsaegis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.7.1/agentsaegis_0.7.1_linux_amd64.tar.gz"
-      sha256 "a94780a688b59f7488ad59fd4315b9b458e3f59c0ddace51153fed6f7bc57900"
+      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.8.0/agentsaegis_0.8.0_linux_amd64.tar.gz"
+      sha256 "d0c1c03d9c71765ad05d78e98492c934fcb047544f4e347d87c5f433eee66b22"
       define_method(:install) do
         bin.install "agentsaegis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.7.1/agentsaegis_0.7.1_linux_arm64.tar.gz"
-      sha256 "78ef816ffade5239ae14f7301f0277c5ef332af54ee8cb1c61c65990ff727c7e"
+      url "https://github.com/agentsaegis/go-proxy/releases/download/v0.8.0/agentsaegis_0.8.0_linux_arm64.tar.gz"
+      sha256 "1f37b211d0c756c14142d024e9f7d5218e775bc6d9f946848d1a143ae9ee1e00"
       define_method(:install) do
         bin.install "agentsaegis"
       end
